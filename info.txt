@@ -1,0 +1,58 @@
+Spring Framework 6 & Spring Boot 3 desde cero a experto 2024
+Andrés Guzmán
+
+
+Spring MVC: Creando un modelo
+
+Anotación @RequestMapping
+06:48
+09:37
+09:42
+Cambiar puerto http 8080
+04:09
+07:31
+Perzonalizar el DTO
+05:03
+Api Rest listar
+05:19
+Directiva if de Thymeleaf
+06:56
+Listas en Thymeleaf
+06:36
+Directiva each (foreach) de Thymeleaf
+10:39
+Anotación @ModelAttribute
+07:16
+Anotacion @RequestParam
+09:12
+Obtener varios parámetros de la URL con @RequestParam
+06:37
+Objeto request desde HttpServletRequest
+08:15
+Anotación @PathVariable
+06:54
+Obtener varios parámetros de la ruta con @PathVariable
+04:08
+09:33
+Inyectar valores usando la anotación @Value
+09:31
+Agregando otros archivos properties personalizados para las configuraciones
+08:59
+Encoding charset en properties
+03:36
+Spring Expression Language (SpEL) con @Value
+08:02
+Map SpEL con @Value
+07:01
+Objeto Environment de Spring para leer configuraciones
+06:32
+Retornando redirect y forward como respuesta en métodos del controlador
+09:36
+Despliegue y ejecución desde terminal (deploy)
+09:38
+Deploy maven desde visual code
+04:12
+Detalle con maven clean
+02:53
+Directiva href (enlaces) de Thymeleaf
+09:46

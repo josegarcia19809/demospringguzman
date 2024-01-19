@@ -1,5 +1,6 @@
 package com.ico.demospringguzman.controllers;
 
+import com.ico.demospringguzman.models.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,6 +13,11 @@ public class UserController {
         model.addAttribute("title", "Hola Mundo Sprint Boot");
         model.addAttribute("name", "José");
         model.addAttribute("lastname", "García");
+        // Agregando un objeto a la salida
+        User user=new User();
+        user.setName("Luis");
+        user.setLastname("Morales");
+        model.addAttribute("user", user);
         return "details";
     }
 }
