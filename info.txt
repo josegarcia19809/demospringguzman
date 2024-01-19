@@ -2,15 +2,8 @@ Spring Framework 6 & Spring Boot 3 desde cero a experto 2024
 Andrés Guzmán
 
 
-Spring MVC: Creando un modelo
+Spring MVC: La clase DTO
 
-Anotación @RequestMapping
-06:48
-09:37
-09:42
-Cambiar puerto http 8080
-04:09
-07:31
 Perzonalizar el DTO
 05:03
 Api Rest listar
