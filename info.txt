@@ -2,12 +2,8 @@ Spring Framework 6 & Spring Boot 3 desde cero a experto 2024
 Andrés Guzmán
 
 
-Spring MVC: Directiva if de Thymeleaf
+Spring MVC: Listas en Thymeleaf
 
-
-06:56
-Listas en Thymeleaf
-06:36
 Directiva each (foreach) de Thymeleaf
 10:39
 Anotación @ModelAttribute
