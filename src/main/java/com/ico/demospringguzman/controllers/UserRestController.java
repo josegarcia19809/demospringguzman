@@ -7,7 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -28,6 +30,16 @@ public class UserRestController {
         respuesta.put("user", user);
 
         return respuesta; // localhost:8080/api/details-map
+    }
+
+    // Devolver una lista de usuarios
+    @GetMapping("/list")
+    public List<User> listaUsuarios() {
+        List<User> usuarios = new ArrayList<>();
+        usuarios.add(new User("Rosa", "Sanchez"));
+        usuarios.add(new User("María", "De la O"));
+        usuarios.add(new User("Jimena", "Moreno"));
+        return usuarios; // localhost:8080/api/list
     }
 
     @GetMapping("details-dto")
