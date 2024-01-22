@@ -2,12 +2,8 @@ Spring Framework 6 & Spring Boot 3 desde cero a experto 2024
 Andrés Guzmán
 
 
-Spring MVC: La clase DTO
+Spring MVC: Api Rest listar
 
-Perzonalizar el DTO
-05:03
-Api Rest listar
-05:19
 Directiva if de Thymeleaf
 06:56
 Listas en Thymeleaf
