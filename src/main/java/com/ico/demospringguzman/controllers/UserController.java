@@ -17,6 +17,7 @@ public class UserController {
         User user=new User();
         user.setName("Luis");
         user.setLastname("Morales");
+        user.setEmail("josegarcia@gmail.com");
         model.addAttribute("user", user);
         return "details";
     }

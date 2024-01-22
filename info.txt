@@ -2,9 +2,9 @@ Spring Framework 6 & Spring Boot 3 desde cero a experto 2024
 Andrés Guzmán
 
 
-Spring MVC: Api Rest listar
+Spring MVC: Directiva if de Thymeleaf
 
-Directiva if de Thymeleaf
+
 06:56
 Listas en Thymeleaf
 06:36

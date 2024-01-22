@@ -11,6 +11,8 @@
 <hr>
 <h3 th:text="${user.name}"></h3>
 <h3 th:text="${user.lastname}"></h3>
+<h3 th:if="${user.email}" th:text="${user.email}"></h3>
+<h3 th:if="${user.email==null}" th:text="${'No tiene email'}"></h3>
 </body>
 </html>
 <!--localhost:8080/details-->
