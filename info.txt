@@ -2,11 +2,8 @@ Spring Framework 6 & Spring Boot 3 desde cero a experto 2024
 Andrés Guzmán
 
 
-Spring MVC: Obtener varios parámetros de la URL con @RequestParam
+Spring MVC: Objeto request desde HttpServletRequest
 
-
-Objeto request desde HttpServletRequest
-08:15
 Anotación @PathVariable
 06:54
 Obtener varios parámetros de la ruta con @PathVariable
