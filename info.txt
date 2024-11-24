@@ -2,9 +2,9 @@ Spring Framework 6 & Spring Boot 3 desde cero a experto 2024
 Andrés Guzmán
 
 
-Spring MVC: Anotación @ModelAttribute
+Spring MVC: Anotacion @RequestParam
 
-Anotacion @RequestParam
+
 09:12
 Obtener varios parámetros de la URL con @RequestParam
 06:37
