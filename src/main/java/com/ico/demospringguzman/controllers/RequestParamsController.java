@@ -19,4 +19,14 @@ public class RequestParamsController {
         // http://localhost:8080/api/params/mostrar_mensaje?mensaje=buenas
         // http://localhost:8080/api/params/mostrar_mensaje
     }
+
+    @GetMapping("/mostrar_mensaje_codigo")
+    public ParamDTO mostrarMensajeYCodigo(@RequestParam String mensaje,
+                                          @RequestParam Integer codigo) {
+        ParamDTO paramDTO = new ParamDTO();
+        paramDTO.setMessage(mensaje);
+        paramDTO.setCode(codigo);
+        return paramDTO;
+        //http://localhost:8080/api/params/mostrar_mensaje_codigo?mensaje=hola&codigo=1234
+    }
 }
