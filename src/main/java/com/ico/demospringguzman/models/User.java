@@ -5,6 +5,19 @@ public class User {
     private String lastname;
     private String email;
 
+    public User(String name, String lastname) {
+        this.name = name;
+        this.lastname = lastname;
+    }
+
+    public User() {
+    }
+
+    public User(String name, String lastname, String email) {
+        this(name, lastname);
+        this.email = email;
+    }
+
     public String getEmail() {
         return email;
     }
@@ -13,13 +26,6 @@ public class User {
         this.email = email;
     }
 
-    public User(String name, String lastname) {
-        this.name = name;
-        this.lastname = lastname;
-    }
-
-    public User() {
-    }
 
     public String getName() {
         return name;
