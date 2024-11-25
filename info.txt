@@ -2,9 +2,9 @@ Spring Framework 6 & Spring Boot 3 desde cero a experto 2024
 Andrés Guzmán
 
 
-Spring MVC: Objeto request desde HttpServletRequest
+Spring MVC: Anotación @PathVariable
 
-Anotación @PathVariable
+
 06:54
 Obtener varios parámetros de la ruta con @PathVariable
 04:08
