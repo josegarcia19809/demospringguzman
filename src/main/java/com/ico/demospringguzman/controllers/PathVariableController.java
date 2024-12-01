@@ -1,10 +1,8 @@
 package com.ico.demospringguzman.controllers;
 
+import com.ico.demospringguzman.models.User;
 import com.ico.demospringguzman.models.dto.ParamDTO;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -30,5 +28,13 @@ public class PathVariableController {
         map.put("id", id);
         return map;
         // http://localhost:8080/api/var/producto_mix/pc/2500
+    }
+
+    @PostMapping("/create")
+    public User create(@RequestBody User user) {
+        user.setName(user.getName().toUpperCase());
+        user.setLastname(user.getLastname().toUpperCase());
+        return user;
+        // http://localhost:8080/api/var/create -- Usar Postman
     }
 }

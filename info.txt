@@ -2,13 +2,10 @@ Spring Framework 6 & Spring Boot 3 desde cero a experto 2024
 Andrés Guzmán
 
 
-Spring MVC: Obtener varios parámetros de la ruta con @PathVariable
+Spring MVC: API Rest enviar Json Petición POST
 
 
-06:54
 
-04:08
-09:33
 Inyectar valores usando la anotación @Value
 09:31
 Agregando otros archivos properties personalizados para las configuraciones
