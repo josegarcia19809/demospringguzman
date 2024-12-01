@@ -2,12 +2,8 @@ Spring Framework 6 & Spring Boot 3 desde cero a experto 2024
 Andrés Guzmán
 
 
-Spring MVC: API Rest enviar Json Petición POST
+Spring MVC: Inyectar valores usando la anotación @Value
 
-
-
-Inyectar valores usando la anotación @Value
-09:31
 Agregando otros archivos properties personalizados para las configuraciones
 08:59
 Encoding charset en properties

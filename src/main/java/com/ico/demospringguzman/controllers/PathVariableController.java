@@ -2,6 +2,7 @@ package com.ico.demospringguzman.controllers;
 
 import com.ico.demospringguzman.models.User;
 import com.ico.demospringguzman.models.dto.ParamDTO;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -10,6 +11,18 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/var")
 public class PathVariableController {
+
+    @Value("${config.username}")
+    private String userName;
+
+//    @Value("${config.message}")
+//    private String message;
+
+    @Value("${config.lista}")
+    private String[] lista;
+
+    @Value("${config.code}")
+    private Integer code;
 
     @GetMapping("/producto/{nombre}")
     public ParamDTO getProducto(@PathVariable String nombre) {
@@ -22,7 +35,7 @@ public class PathVariableController {
 
     @GetMapping("/producto_mix/{nombre}/{id}")
     public Map<String, Object> getProducto(@PathVariable String nombre,
-                                       @PathVariable int id) {
+                                           @PathVariable int id) {
         Map<String, Object> map = new HashMap<>();
         map.put("producto", nombre);
         map.put("id", id);
@@ -36,5 +49,16 @@ public class PathVariableController {
         user.setLastname(user.getLastname().toUpperCase());
         return user;
         // http://localhost:8080/api/var/create -- Usar Postman
+    }
+
+    @GetMapping("/values")
+    public Map<String, Object> getValues(@Value("${config.message}") String message) {
+        Map<String, Object> json = new HashMap<>();
+        json.put("username", userName);
+        json.put("code", code);
+        json.put("message", message);
+        json.put("lista", lista);
+        return json;
+        // http://localhost:8080/api/var/values -- Usar Postman
     }
 }
