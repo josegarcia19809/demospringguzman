@@ -1,10 +1,9 @@
 Spring Framework 6 & Spring Boot 3 desde cero a experto 2024
 Andrés Guzmán
 
+Spring MVC: Agregando otros archivos properties personalizados para las configuraciones
 
-Spring MVC: Inyectar valores usando la anotación @Value
 
-Agregando otros archivos properties personalizados para las configuraciones
 08:59
 Encoding charset en properties
 03:36
