@@ -1,12 +1,8 @@
 Spring Framework 6 & Spring Boot 3 desde cero a experto 2024
 Andrés Guzmán
 
-Spring MVC: Agregando otros archivos properties personalizados para las configuraciones
+Spring MVC: Encoding charset en properties
 
-
-08:59
-Encoding charset en properties
-03:36
 Spring Expression Language (SpEL) con @Value
 08:02
 Map SpEL con @Value
