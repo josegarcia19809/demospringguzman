@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -20,6 +21,15 @@ public class PathVariableController {
 
     @Value("${config.lista}")
     private String[] lista;
+
+    @Value("#{'${config.lista}'.split(',')}")
+    private List<String> listaSeparadaPorComas;
+
+    @Value("#{'${config.lista}'.toUpperCase()}")
+    private String valueString;
+
+    @Value("${config.lista}")
+    private List<String> listOfValues;
 
     @Value("${config.code}")
     private Integer code;
@@ -58,6 +68,9 @@ public class PathVariableController {
         json.put("code", code);
         json.put("message", message);
         json.put("lista", lista);
+        json.put("listOfValues", listOfValues);
+        json.put("listaSeparadaPorComas", listaSeparadaPorComas);
+        json.put("valueString", valueString);
         return json;
         // http://localhost:8080/api/var/values -- Usar Postman
     }
