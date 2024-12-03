@@ -28,6 +28,15 @@ public class PathVariableController {
     @Value("#{'${config.lista}'.toUpperCase()}")
     private String valueString;
 
+    @Value("#{${config.valuesMap}}")
+    private Map<String, Object> valuesMap;
+
+    @Value("#{${config.valuesMap}.product}")
+    private String product;
+
+    @Value("#{${config.valuesMap}.price}")
+    private Long price;
+
     @Value("${config.lista}")
     private List<String> listOfValues;
 
@@ -71,6 +80,10 @@ public class PathVariableController {
         json.put("listOfValues", listOfValues);
         json.put("listaSeparadaPorComas", listaSeparadaPorComas);
         json.put("valueString", valueString);
+        json.put("valuesMap", valuesMap);
+        json.put("product", product);
+        json.put("price", price);
+
         return json;
         // http://localhost:8080/api/var/values -- Usar Postman
     }

@@ -1,10 +1,8 @@
 Spring Framework 6 & Spring Boot 3 desde cero a experto 2024
 Andrés Guzmán
 
-Spring MVC: Spring Expression Language (SpEL) con @Value
+Spring MVC: Map SpEL con @Value
 
-Map SpEL con @Value
-07:01
 Objeto Environment de Spring para leer configuraciones
 06:32
 Retornando redirect y forward como respuesta en métodos del controlador
