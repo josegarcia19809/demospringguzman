@@ -2,12 +2,15 @@ package com.ico.demospringguzman.controllers;
 
 import com.ico.demospringguzman.models.User;
 import com.ico.demospringguzman.models.dto.ParamDTO;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 @RestController
 @RequestMapping("/api/var")
@@ -43,6 +46,9 @@ public class PathVariableController {
     @Value("${config.code}")
     private Integer code;
 
+    @Autowired
+    private Environment environment;
+
     @GetMapping("/producto/{nombre}")
     public ParamDTO getProducto(@PathVariable String nombre) {
         ParamDTO paramDTO = new ParamDTO();
@@ -73,9 +79,16 @@ public class PathVariableController {
     @GetMapping("/values")
     public Map<String, Object> getValues(@Value("${config.message}") String message) {
         Map<String, Object> json = new HashMap<>();
+        Long code2 = environment.getProperty("config.code", Long.class);
         json.put("username", userName);
         json.put("code", code);
         json.put("message", message);
+        json.put("messageEnvironment", environment.getProperty("config.message"));
+        json.put("codeEnvironment", environment.getProperty("config.code"));
+        json.put("codeEnvironmentLong", environment.getProperty("config.code", Long.class));
+        json.put("codeEnvironmentInt", Integer.valueOf(Objects.requireNonNull(environment.
+                getProperty("config.code"))));
+        json.put("codeEnvironmentLong2", code2);
         json.put("lista", lista);
         json.put("listOfValues", listOfValues);
         json.put("listaSeparadaPorComas", listaSeparadaPorComas);

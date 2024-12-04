@@ -1,9 +1,9 @@
 Spring Framework 6 & Spring Boot 3 desde cero a experto 2024
 Andrés Guzmán
 
-Spring MVC: Map SpEL con @Value
+Spring MVC: Objeto Environment de Spring para leer configuraciones
 
-Objeto Environment de Spring para leer configuraciones
+
 06:32
 Retornando redirect y forward como respuesta en métodos del controlador
 09:36
