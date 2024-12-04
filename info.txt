@@ -1,11 +1,11 @@
 Spring Framework 6 & Spring Boot 3 desde cero a experto 2024
 Andrés Guzmán
 
-Spring MVC: Objeto Environment de Spring para leer configuraciones
+Spring MVC: Retornando redirect y forward como respuesta en métodos del controlador
 
 
 06:32
-Retornando redirect y forward como respuesta en métodos del controlador
+
 09:36
 Despliegue y ejecución desde terminal (deploy)
 09:38
