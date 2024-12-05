@@ -1,17 +1,7 @@
 Spring Framework 6 & Spring Boot 3 desde cero a experto 2024
 Andrés Guzmán
 
-Spring MVC: Retornando redirect y forward como respuesta en métodos del controlador
+Spring MVC: Directiva href (enlaces) de Thymeleaf
 
 
-06:32
 
-09:36
-Despliegue y ejecución desde terminal (deploy)
-09:38
-Deploy maven desde visual code
-04:12
-Detalle con maven clean
-02:53
-Directiva href (enlaces) de Thymeleaf
-09:46

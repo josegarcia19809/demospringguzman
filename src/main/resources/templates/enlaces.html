@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Enlaces</title>
+</head>
+<body>
+<div>
+    <h1>Directiva href Enlaces</h1>
+    <p>
+        <a th:href="@{/list}">Ver listado</a>
+    </p>
+    <p>
+        <a th:href="@{'/api/params/mostrar_mensaje?mensaje=' + ${mensaje}}">Mostrar mensaje</a>
+    </p>
+    <p>
+        <a th:href="@{/api/params/mostrar_mensaje(mensaje='Hola que tal')}">Mostrar mensaje 2</a>
+    </p>
+    <p>
+        <a th:href="@{/api/params/mostrar_mensaje_codigo(mensaje='Hola que tal', codigo=32324)}">
+            Mostrar mensaje y código</a>
+    </p>
+    <p>
+        <a th:href="@{'/api/var/producto/' + ${producto}}">
+            Mostrar producto</a>
+    </p>
+    <p>
+        <a th:href="@{'/api/var/producto/' + 'Mouse'}">
+            Mostrar producto Mouse</a>
+    </p>
+
+    <p>
+        <a th:href="@{'/api/var/producto_mix/' + 'Mouse'+'/' + 3214}">
+            Mostrar producto e id Mouse</a>
+    </p>
+</div>
+
+</body>
+</html>

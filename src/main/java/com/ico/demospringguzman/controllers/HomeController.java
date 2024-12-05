@@ -1,6 +1,7 @@
 package com.ico.demospringguzman.controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
@@ -13,6 +14,13 @@ public class HomeController {
     @GetMapping({"/home2", "/home3", "/home4"})
     public String home2(){
         return "forward:/list";
+    }
+
+    @GetMapping("/enlaces")
+    public String enlaces(Model model){
+        model.addAttribute("mensaje", "Hola mundo");
+        model.addAttribute("producto", "PC");
+        return "enlaces";
     }
 }
 
